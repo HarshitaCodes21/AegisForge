@@ -1,0 +1,457 @@
+/* ================================
+   AEGISFORGE - MAIN STYLES
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0f14;
+  color: #e8edf3;
+}
+
+/* App Layout */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  background: #0b0f14;
+}
+
+/* ================================
+   SIDEBAR
+================================ */
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: #10161d;
+  border-right: 1px solid #202832;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  margin-bottom: 35px;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #19d3ae;
+  color: #07110f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  font-size: 11px;
+  color: #7d8996;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-item {
+  width: 100%;
+  padding: 12px 14px;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #8e9aa7;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: #182129;
+  color: #ffffff;
+}
+
+.nav-item.active {
+  background: #18342f;
+  color: #19d3ae;
+}
+
+/* Agent Status */
+
+.agent-status {
+  margin-top: auto;
+  padding: 12px;
+  border-top: 1px solid #202832;
+  color: #9ba6b2;
+  font-size: 12px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #19d3ae;
+  margin-right: 8px;
+}
+
+/* ================================
+   MAIN
+================================ */
+
+.main {
+  flex: 1;
+  padding: 32px;
+  max-width: 1500px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.header p {
+  color: #7d8996;
+  font-size: 14px;
+}
+
+.header-status {
+  font-size: 12px;
+  color: #19d3ae;
+  border: 1px solid #24574d;
+  padding: 9px 13px;
+  border-radius: 20px;
+}
+
+/* ================================
+   CARDS
+================================ */
+
+.card {
+  background: #111820;
+  border: 1px solid #202a34;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.card-title,
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-label,
+.card-title span:first-child {
+  font-size: 11px;
+  color: #7d8996;
+  letter-spacing: 1px;
+}
+
+/* ================================
+   RISK GRID
+================================ */
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.risk-card {
+  min-height: 170px;
+}
+
+.risk-score {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #19d3ae;
+}
+
+.risk-score span {
+  font-size: 18px;
+  color: #687581;
+}
+
+.card p {
+  color: #7d8996;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* Risk Bar */
+
+.risk-bar {
+  width: 100%;
+  height: 6px;
+  background: #26303a;
+  border-radius: 5px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.risk-fill {
+  height: 100%;
+  background: #19d3ae;
+  border-radius: 5px;
+}
+
+/* Badges */
+
+.badge {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.badge.low {
+  background: #173b34;
+  color: #19d3ae;
+}
+
+.badge.online {
+  background: #173b34;
+  color: #19d3ae;
+}
+
+/* ================================
+   TWO COLUMN
+================================ */
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  font-size: 16px;
+}
+
+/* Worker Agent */
+
+.agent-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.agent-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #1c2933;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #19d3ae;
+  font-weight: bold;
+}
+
+.agent-info h3 {
+  font-size: 15px;
+}
+
+.objective {
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #0c1218;
+  border: 1px solid #202a34;
+}
+
+.objective span {
+  font-size: 10px;
+  color: #687581;
+}
+
+.objective p {
+  color: #d7dee5;
+  margin-top: 8px;
+}
+
+/* Security Controls */
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #202832;
+  font-size: 13px;
+}
+
+.control:last-child {
+  border-bottom: none;
+}
+
+.control strong {
+  color: #19d3ae;
+  font-size: 11px;
+}
+
+/* ================================
+   ACTIVITY
+================================ */
+
+.activity-card {
+  margin-bottom: 18px;
+}
+
+.view-btn {
+  background: transparent;
+  border: 1px solid #303b46;
+  color: #9ba6b2;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #202832;
+}
+
+.activity:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.activity-icon.safe {
+  background: #173b34;
+  color: #19d3ae;
+}
+
+.activity-icon.danger {
+  background: #3c2025;
+  color: #ff6475;
+}
+
+.activity-icon.warning {
+  background: #3b3020;
+  color: #f5b84b;
+}
+
+.activity strong {
+  font-size: 13px;
+}
+
+.activity-time {
+  font-size: 11px;
+  color: #687581;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.quick-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.primary-btn,
+.danger-btn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #19d3ae;
+  color: #07110f;
+  border: none;
+}
+
+.danger-btn {
+  background: #29171b;
+  color: #ff6475;
+  border: 1px solid #633038;
+}
+
+.primary-btn:hover,
+.danger-btn:hover {
+  opacity: 0.85;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .risk-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 190px;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .risk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
